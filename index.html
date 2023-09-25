@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/motus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <input type="text" id="input" oninput="this.value = this.value.toUpperCase();">
+    <div style="background-color: rgb(71, 100, 187); width: 12em; height: 2.5em; position: absolute; top: 0; left: 0;"></div>
+    <div id="texte-input" class="texte none"></div>
+    <div id="texte1" class="texte1 none"></div>
+    <div id="lettres-container1" class="lettres-container"></div>
+    <div id="lettres-container2" class="lettres-container"></div>
+    <div id="lettres-container3" class="lettres-container"></div>
+    <div id="lettres-container4" class="lettres-container"></div>
+    <div id="lettres-container5" class="lettres-container"></div>
+    <div id="lettres-container6" class="lettres-container"></div>
+    <div id="texte3" class="texte3"></div>
+
+    <audio id="audiobpl" src="audios/lettre_bien_placee.mp3"></audio>
+    <audio id="audiompl" src="audios/lettre_mal_placee.mp3"></audio>
+    <audio id="audiopp" src="audios/lettre_non_presente.mp3"></audio>
+
+    <div class="choix">
+        
+        <div class="Titre">
+            <div class="caselettre jaune">S</div>
+            <div class="caselettre rouge">U</div>
+            <div class="caselettre">T</div>
+            <div class="caselettre jaune">O</div>
+            <div class="caselettre">M</div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 8em;">
+            <h1>Choisissez un mot (min : 5 caractères ; max : 12 caractères)</h1>
+        </div>
+        <div class="containtinput">
+            <input type="text" autofocus id="inputchoix" class="inputchoix" oninput="this.value = this.value.toUpperCase();" >
+        </div>
+        <div class="motpaslong">
+            
+        </div>
+    </div>
+</body>
+<script src="js/motus.js"></script>
+</html>
