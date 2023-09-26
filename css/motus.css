@@ -1,3 +1,10 @@
+.input{
+    width: 1em; 
+    opacity: 0; 
+    cursor: default;
+}
+
+
 .texte{
     background-color: yellow;
     width: 15em;
@@ -118,4 +125,28 @@ body{
 }
 .op0{
     opacity: 0;
+}
+
+@media (max-width: 767px) {
+    .mobile{
+        transform: scale(.3);
+    }
+    .input{
+        opacity: 1;
+    }
+    body{
+        overflow-x: hidden;
+        width: 150px;
+    }
+    .inputchoix{
+        position: relative;
+        left: 200%;
+    }
+    .Titre{
+        left: 80%;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    
 }
