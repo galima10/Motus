@@ -716,7 +716,9 @@ input2.addEventListener('keydown', function(event1) {
 })
 
   
-  
+document.querySelector(".btn").addEventListener("click", ()=>{
+  location.reload();
+})
   
   
   

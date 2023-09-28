@@ -107,6 +107,21 @@ body{
     background-color: rgb(71, 100, 187);
 }
 
+.btn{
+    background-color: rgb(49, 71, 134);
+    color: white;
+    font-size: 1.2em;
+    height: 4em;
+    width: 8em;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: .5em;
+    margin-top: 1em;
+    border-radius: 1.5em;
+    border: white;
+}
+
 .containtinput{
     display: flex;
     justify-content: center;
@@ -144,6 +159,12 @@ body{
     }
     .Titre{
         left: 80%;
+    }
+    .btn{
+        left: -50%;
+        top: -50%;
+        margin-top: 5em;
+        border-radius: 1.2em;
     }
 }
 
